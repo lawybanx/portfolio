@@ -9,17 +9,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Awwal's Portfolio",
+  title: 'Awwal Bankole',
   description: 'My Developer Portfolio Website built with Next.js and Tailwind',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>
-        <Navigation />
-        {children}
-      </body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }
