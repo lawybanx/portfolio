@@ -3,6 +3,25 @@ import Link from 'next/link';
 import React from 'react';
 
 export default function About() {
+  const technologies = [
+    'html5',
+    'css3',
+    'javascript',
+    'react',
+    'redux',
+    'tailwindcss',
+    'nextdotjs',
+    'typescript',
+    'nodedotjs',
+    'mongodb',
+    'express',
+    'python',
+    'firebase',
+    'chakraui',
+    'git',
+    'github',
+  ];
+
   return (
     <>
       <div className='text-gray-600 md:text-md text-lg leading-loose'>
@@ -38,25 +57,21 @@ export default function About() {
           <h2 className='text-3xl pb-6 text-center'>
             Technologies I Work With
           </h2>
-          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-            {/* {technologies.map((tech, index) => (
-            <div key={index} className='text-center'>
-              <img
-                src={tech.image}
-                alt={`${tech.name} Logo`}
-                className='mx-auto mb-2'
-                style={{ maxWidth: '100%', height: 'auto' }}
-              />
-              <p className='text-gray-700'>{tech.name}</p>
+          <div className='flex flex-wrap justify-center'>
+            {technologies.map((tech, index) => (
+              <div
+                key={index}
+                className='text-center mx-4 my-4 transition-transform transform hover:scale-125 cursor-pointer'
+              >
+                <Image
+                  src={`https://cdn.simpleicons.org/${tech}`}
+                  alt={`${tech} Logo`}
+                  width={100}
+                  height={100}
+                  unoptimized
+                />
               </div>
-            ))} */}
-            
-            <img
-              src='https://cdn.simpleicons.org/mongodb'
-              alt='mongodb'
-              height='500'
-              width='500'
-            />
+            ))}
           </div>
         </div>
       </div>
