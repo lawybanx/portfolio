@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -23,12 +24,41 @@ export default function About() {
           projects. Let&apos;s build and learn together!
         </p>
 
-        <Link
+        <a
           className='inline-block md:w-auto my-6 md:mr-6 py-3 px-10 text-sm font-bold uppercase border-2 border-transparent bg-zinc-950 text-gray-100 rounded hover:bg-zinc-800 hover:bg-opacity-50 transition duration-200'
-          href=''
+          href='/awwal_bankole.pdf'
+          download='awwal_bankole'
         >
           Download cv
-        </Link>
+        </a>
+
+        {/* Technologies section */}
+
+        <div className='container mx-auto py-10'>
+          <h2 className='text-3xl pb-6 text-center'>
+            Technologies I Work With
+          </h2>
+          <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            {/* {technologies.map((tech, index) => (
+            <div key={index} className='text-center'>
+              <img
+                src={tech.image}
+                alt={`${tech.name} Logo`}
+                className='mx-auto mb-2'
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+              <p className='text-gray-700'>{tech.name}</p>
+              </div>
+            ))} */}
+            
+            <img
+              src='https://cdn.simpleicons.org/mongodb'
+              alt='mongodb'
+              height='500'
+              width='500'
+            />
+          </div>
+        </div>
       </div>
     </>
   );
