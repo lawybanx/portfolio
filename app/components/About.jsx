@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
 
 export default function About() {
   const technologies = [
@@ -25,7 +23,7 @@ export default function About() {
   return (
     <>
       <div className='text-gray-600 md:text-md text-lg leading-loose'>
-        <h2 className='md:text-6xl text-5xl pb-6 ' id='about'>
+        <h2 className='md:text-6xl text-5xl pb-6  ' id='about'>
           About me
         </h2>
         <p>
@@ -61,7 +59,7 @@ export default function About() {
             {technologies.map((tech, index) => (
               <div
                 key={index}
-                className='text-center mx-4 my-4 transition-transform transform hover:scale-125 cursor-pointer'
+                className='text-center mx-4 my-4 transition-transform transform hover:scale-125 cursor-pointer group relative'
               >
                 <Image
                   src={`https://cdn.simpleicons.org/${tech}`}
@@ -70,6 +68,9 @@ export default function About() {
                   height={100}
                   unoptimized
                 />
+                <span class='absolute top-20 scale-0 transition-all rounded bg-gray-800 p-1 text-xs text-white group-hover:scale-100'>
+                {tech}
+                </span>
               </div>
             ))}
           </div>
