@@ -1,9 +1,8 @@
 import { Poppins } from 'next/font/google';
-import Navigation from './components/Navigation';
 import './globals.css';
 
 const poppins = Poppins({
-  subsets: ['latin'],
+  subsets: ['devanagari'],
   weight: '200',
   adjustFontFallback: false,
 });

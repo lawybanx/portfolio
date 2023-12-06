@@ -23,7 +23,7 @@ export default function About() {
   return (
     <>
       <div className='text-gray-600 md:text-md text-lg leading-loose'>
-        <h2 className='md:text-6xl text-5xl pb-6  ' id='about'>
+        <h2 className='md:text-6xl text-5xl pb-6' id='about'>
           About me
         </h2>
         <p>
@@ -68,7 +68,7 @@ export default function About() {
                   height={100}
                   unoptimized
                 />
-                <span class='absolute top-20 scale-0 transition-all rounded bg-gray-800 p-1 text-xs text-white group-hover:scale-100'>
+                <span className='absolute top-20 scale-0 transition-all rounded bg-gray-800 p-1 text-xs text-white group-hover:scale-100'>
                 {tech}
                 </span>
               </div>
