@@ -20,14 +20,16 @@ export default async function ProjectCard() {
           key={project.id}
           className='rounded-lg bg-white p-2 shadow duration-150 hover:scale-105 hover:shadow-md'
         >
-          <Image
-            src={project.image}
-            alt='project image'
-            className='w-full max-h-44 rounded-lg'
-            width={500}
-            height={500}
-            unoptimized
-          />
+          <div className='flex h-44'>
+            <Image
+              src={project.image}
+              alt='project image'
+              className='w-full rounded-lg'
+              width={500}
+              height={500}
+              unoptimized
+            />
+          </div>
 
           <p className='font-bold text-gray-500 my-4 px-4'>{project.title}</p>
 
