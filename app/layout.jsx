@@ -1,4 +1,5 @@
 import { Poppins } from 'next/font/google';
+import Navigation from './components/Navigation';
 import './globals.css';
 
 const poppins = Poppins({
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={`${poppins.className} bg-stone-100`}>{children}</body>
+      <body className={`${poppins.className} bg-stone-100`}>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
