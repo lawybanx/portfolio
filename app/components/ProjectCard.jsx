@@ -14,11 +14,11 @@ export default async function ProjectCard() {
   const projects = await getProjects();
 
   return (
-    <div className='grid grid-cols-1 gap-x-3 gap-y-10 md:grid-cols-3 my-10'>
+    <div className='grid sm:grid-cols-2 gap-x-3 gap-y-10 md:grid-cols-3 my-10 place-items-center'>
       {projects.map(project => (
         <div
           key={project.id}
-          className='rounded-lg bg-white p-2 shadow duration-150 hover:scale-105 hover:shadow-md'
+          className='rounded-lg bg-white p-2 shadow duration-150 hover:scale-105 hover:shadow-md max-w-xs'
         >
           <div className='flex h-44'>
             <Image
