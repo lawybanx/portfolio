@@ -64,12 +64,13 @@ export default function About() {
                 <Image
                   src={`https://cdn.simpleicons.org/${tech}`}
                   alt={`${tech} Logo`}
-                  width={100}
-                  height={100}
+                  width={96}
+                  height={96}
                   unoptimized
+                  className='md:w-24 w-20'
                 />
                 <span className='absolute top-20 scale-0 transition-all rounded bg-gray-800 p-1 text-xs text-white group-hover:scale-100'>
-                {tech}
+                  {tech}
                 </span>
               </div>
             ))}
