@@ -15,17 +15,32 @@ export default function ContactForm() {
     setFormData(prevData => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    console.log(formData);
 
-     setFormData({
-       name: '',
-       email: '',
-       subject: '',
-       message: '',
-     });
-    
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error during form submission:', error);
+    }
   };
 
   return (
