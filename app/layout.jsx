@@ -6,6 +6,7 @@ const poppins = Poppins({
   subsets: ['devanagari'],
   weight: '200',
   adjustFontFallback: false,
+  display: 'swap'
 });
 
 export const metadata = {

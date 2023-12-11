@@ -15,9 +15,8 @@ export default function ContactForm() {
     setFormData(prevData => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async e => {
-    e.preventDefault();
-
+  const handleSubmit = async event => {
+    event.preventDefault();
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
@@ -27,19 +26,23 @@ export default function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        console.log('Form submitted successfully');
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: '',
-        });
-      } else {
-        console.error('Form submission failed');
+      if (!response.ok) {
+        console.log('falling over');
+        throw new Error(`response status: ${response.status}`);
       }
-    } catch (error) {
-      console.error('Error during form submission:', error);
+      const responseData = await response.json();
+      console.log(responseData['message']);
+
+      alert('Message successfully sent');
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    } catch (err) {
+      console.error(err);
+      alert('Error, please try resubmitting the form');
     }
   };
 
