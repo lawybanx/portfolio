@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "1",
-      "image": "https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899326/chatter_vtmvzz.png",
       "title": "chatter",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "lang": ["Reactjs", "ChakraUI", "Typescript"],
@@ -12,11 +12,11 @@
     {
       "id": "2",
       "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899320/my-repos_e5oxxz.png",
-      "title": "chatter",
+      "title": "My Repos",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "ChakraUI", "Typescript"],
-      "live": "https://altschool-chatter.vercel.app/",
-      "repo": "https://github.com/lawybanx/altschool_chatter"
+      "lang": ["Reactjs", "Github API"],
+      "live": "https://my-githubrepo.netlify.app/",
+      "repo": "https://github.com/lawybanx/altschool-second-semester-exam"
     },
     {
       "id": "3",
