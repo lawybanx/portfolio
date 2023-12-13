@@ -14,7 +14,7 @@
       "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899320/my-repos_e5oxxz.png",
       "title": "My Repos",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "Github API"],
+      "lang": ["Reactjs", "Github API", "Bootstrap"],
       "live": "https://my-githubrepo.netlify.app/",
       "repo": "https://github.com/lawybanx/altschool-second-semester-exam"
     },
