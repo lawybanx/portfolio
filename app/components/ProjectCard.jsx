@@ -1,11 +1,7 @@
 import Image from 'next/image';
 
 async function getProjects() {
-  const res = await fetch('http://localhost:4000/projects', {
-    next: {
-      revalidate: 0,
-    },
-  });
+  const res = await fetch('http://localhost:4000/projects');
 
   return res.json();
 }

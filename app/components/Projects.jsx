@@ -20,6 +20,7 @@ export default function Projects() {
           </a>
         </p>
       </div>
+      {/* Project Card Component */}
       <ProjectCard />
     </div>
   );
