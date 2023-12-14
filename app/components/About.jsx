@@ -66,8 +66,8 @@ export default function About() {
                   alt={`${tech} Logo`}
                   width={96}
                   height={96}
-                  unoptimized
                   className='md:w-24 w-20'
+                  unoptimized
                 />
                 <span className='absolute top-20 scale-0 transition-all rounded bg-gray-800 p-1 text-xs text-white group-hover:scale-100'>
                   {tech}

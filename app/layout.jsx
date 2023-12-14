@@ -5,7 +5,7 @@ import './globals.css';
 const poppins = Poppins({
   subsets: ['devanagari'],
   weight: '200',
-  adjustFontFallback: false,
+  // adjustFontFallback: false,
   display: 'swap'
 });
 
