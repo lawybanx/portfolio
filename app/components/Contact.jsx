@@ -20,6 +20,7 @@ export default function Contact() {
               </p>
             </div>
           </div>
+          {/* Contact Form Component */}
           <ContactForm />
         </div>
       </div>

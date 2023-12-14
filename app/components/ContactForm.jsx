@@ -15,8 +15,8 @@ export default function ContactForm() {
     setFormData(prevData => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async event => {
-    event.preventDefault();
+  const handleSubmit = async e => {
+    e.preventDefault();
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
