@@ -1,7 +1,9 @@
 import Image from 'next/image';
 
 async function getProjects() {
-  const res = await fetch('http://localhost:4000/projects');
+  const res = await fetch(
+    'https://my-json-server.typicode.com/lawybanx/port-projects/projects'
+  );
 
   return res.json();
 }
