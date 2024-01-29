@@ -1,6 +1,8 @@
 import ContactForm from './ContactForm';
 
 export default function Contact() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className='max-w-4xl mx-auto w-full p-8' id='contact'>
       <div className='container'>
@@ -100,7 +102,7 @@ export default function Contact() {
           </a>
         </div>
         <div>
-          <p>Awwal Bankole &copy; 2023</p>
+          <p>Awwal Bankole &copy; {currentYear}</p>
         </div>
       </div>
     </div>
