@@ -2,35 +2,35 @@
   "projects": [
     {
       "id": "1",
-      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899326/chatter_vtmvzz.png",
-      "title": "chatter",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1706536412/teachmate_ypk7jy.png",
+      "title": "Teachmate",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "ChakraUI", "Typescript"],
-      "live": "https://altschool-chatter.vercel.app/",
-      "repo": "https://github.com/lawybanx/altschool_chatter"
+      "lang": ["Nextjs", "Shadcn UI", "Typescript", "Zod"],
+      "live": "https://teachmate-dashboard.vercel.app/",
+      "repo": "https://github.com/lawybanx/teachmate-dashboard"
     },
     {
       "id": "2",
-      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899320/my-repos_e5oxxz.png",
-      "title": "My Repos",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1706536412/lendsqr_rjziae.png",
+      "title": "Lendsqr dashboard",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "Github API", "Bootstrap"],
-      "live": "https://my-githubrepo.netlify.app/",
-      "repo": "https://github.com/lawybanx/altschool-second-semester-exam"
+      "lang": ["Nextjs", "SCSS", "Typescript"],
+      "live": "https://awwal-bankole-lendsqr-fe-test.vercel.app/",
+      "repo": "https://github.com/lawybanx/lendsqr-fe-test"
     },
     {
       "id": "3",
-      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899326/chatter_vtmvzz.png",
-      "title": "chatter",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1706536413/portfolio_egjboq.png",
+      "title": "Portfolio",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "ChakraUI", "Typescript"],
-      "live": "https://altschool-chatter.vercel.app/",
-      "repo": "https://github.com/lawybanx/altschool_chatter"
+      "lang": ["Nextjs", "TailwindCSS", "Nodemailer"],
+      "live": "https://portfolio-lawybanx.vercel.app/",
+      "repo": "https://github.com/lawybanx/portfolio"
     },
     {
       "id": "4",
-      "image": "https://images.unsplash.com/photo-1580477371194-4593e3c7c6cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "chatter",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899326/chatter_vtmvzz.png",
+      "title": "Chatter",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
       "lang": ["Reactjs", "ChakraUI", "Typescript"],
       "live": "https://altschool-chatter.vercel.app/",
@@ -39,20 +39,20 @@
     {
       "id": "5",
       "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899320/my-repos_e5oxxz.png",
-      "title": "chatter",
+      "title": "My Repos",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "ChakraUI", "Typescript"],
-      "live": "https://altschool-chatter.vercel.app/",
-      "repo": "https://github.com/lawybanx/altschool_chatter"
+      "lang": ["Reactjs", "Github API", "Bootstrap"],
+      "live": "https://my-githubrepo.netlify.app/",
+      "repo": "https://github.com/lawybanx/altschool-second-semester-exam"
     },
     {
       "id": "6",
-      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1701899326/chatter_vtmvzz.png",
-      "title": "chatter",
+      "image": "https://res.cloudinary.com/dbrukzcby/image/upload/v1706536797/Devconnector_buhhbb.png",
+      "title": "Devconnector",
       "descr": " Lorem ipsum dolor sit amet consectetur adipisicing elit",
-      "lang": ["Reactjs", "ChakraUI", "Typescript"],
-      "live": "https://altschool-chatter.vercel.app/",
-      "repo": "https://github.com/lawybanx/altschool_chatter"
+      "lang": ["Reactjs", "Ndoejs", "Github API"],
+      "live": "https://devconnector-fb0e.onrender.com/",
+      "repo": "https://github.com/lawybanx/devconnector-mern"
     }
   ]
 }
